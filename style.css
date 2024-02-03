@@ -114,6 +114,16 @@ li {
   align-items: center;
 }
 
+.container .nutrition {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container li.flex {
+  margin: 0;
+}
+
 .container .caption {
   text-align: start;
   margin-block-end: 1rem;
