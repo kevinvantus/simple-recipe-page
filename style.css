@@ -172,7 +172,7 @@ li {
   body {
     display: flex;
     align-items: center;
-    padding-block: 80px;
+    padding-block: 120px;
   }
 
   .container {
