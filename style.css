@@ -1,0 +1,168 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  --white: hsl(0, 0%, 100%);
+  --Rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+
+  font-size: 16px;
+
+  --outfit: "Outfit", Arial, Helvetica, sans-serif;
+  --young-serif: "Young Serif", serif;
+}
+
+body {
+  font-family: var(--outfit);
+  min-height: 100vh;
+  background-color: var(--eggshell);
+  font-weight: 300;
+  color: var(--dark-charcoal);
+}
+
+/* General styles */
+p,
+li,
+caption {
+  line-height: 1.5;
+  color: var(--wenge-brown);
+}
+
+section {
+  margin-block-start: 1.5rem;
+}
+
+ul,
+ol {
+  margin-inline-start: 1.25rem;
+}
+
+li {
+  padding-inline-start: 1rem;
+}
+
+.border-b {
+  padding-block-end: 1.5rem;
+  border-block-end: 1px solid #e0e0e0;
+}
+/* General styles end */
+
+.container {
+  background-color: #fff;
+  max-width: 44rem;
+  margin-inline: auto;
+}
+
+.container img {
+  display: block;
+  width: 100%;
+}
+
+.container main {
+  padding: 1.5rem 1.75rem;
+}
+
+.container h1 {
+  margin-block-end: 1.25rem;
+  font-size: 2.25rem;
+  color: var(--dark-charcoal);
+  font-family: var(--young-serif);
+  font-weight: 600;
+}
+
+.container .pt {
+  background-color: var(--Rose-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.container h2 {
+  margin-block-end: 1rem;
+  color: var(--nutmeg);
+  font-size: 1.7rem;
+  font-family: var(--young-serif);
+  font-weight: 600;
+}
+
+.container li:not(:last-of-type) {
+  margin-block-end: 0.75rem;
+}
+
+.container .pt h2 {
+  font-size: 1.125rem;
+  color: var(--dark-raspberry);
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container table caption {
+  text-align: start;
+  margin-block-end: 1rem;
+  width: 18.125rem;
+}
+
+.container table td {
+  border-block-end: 1px solid;
+  padding-block: 1rem;
+  width: 50%;
+}
+
+.container table tr:last-of-type td {
+  border: none;
+}
+
+.container table td:first-of-type {
+  padding-left: 2rem;
+}
+
+.container table td:last-child {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 23.5rem) {
+  body {
+    display: flex;
+    align-items: center;
+    padding-block: 80px;
+  }
+
+  .container {
+    border-radius: 16px;
+  }
+
+  .img-ctr {
+    padding: 1.5rem 1.75rem 0;
+  }
+
+  .img-ctr img {
+    border-radius: 8px;
+  }
+
+  .container table caption {
+    width: 100%;
+  }
+}
