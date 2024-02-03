@@ -144,6 +144,12 @@ li {
 }
 
 @media screen and (min-width: 23.5rem) {
+  .container table caption {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 45rem) {
   body {
     display: flex;
     align-items: center;
@@ -160,9 +166,5 @@ li {
 
   .img-ctr img {
     border-radius: 8px;
-  }
-
-  .container table caption {
-    width: 100%;
   }
 }
